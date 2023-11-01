@@ -135,9 +135,9 @@ local talentDescriptions = {
         }, {
             n = 'Improved Disciplines',
             d = {
-                'Reduces the cooldown of your Retaliation, Recklessness and Shield Wall abilities by 2min.',
-                'Reduces the cooldown of your Retaliation, Recklessness and Shield Wall abilities by 4min.',
-                'Reduces the cooldown of your Retaliation, Recklessness and Shield Wall abilities by 6min.'
+                'Reduces the cooldown of your Retaliation, Recklessness and Shield Wall abilities by 2 min.',
+                'Reduces the cooldown of your Retaliation, Recklessness and Shield Wall abilities by 4 min.',
+                'Reduces the cooldown of your Retaliation, Recklessness and Shield Wall abilities by 6 min.'
             },
             iconTexture = 'ability_warrior_improveddisciplines'
         }, {
@@ -631,11 +631,26 @@ local talentDescriptions = {
             n = 'Sanctity Aura',
             d = { 'Increases Holy damage done by party members within 30 yards by 10%. Players may only have one Aura on them per Paladin at any one time.' },
             iconTexture = 'Spell_Holy_MindVision'
-        }
+        }, {
+            n = 'Heart of the Crusader',
+            d = { 
+                'Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Crusader Strike by 5%.',
+                'Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Crusader Strike by 10%.',
+                'Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Crusader Strike by 15%.'
+            },
+            iconTexture = 'Spell_Holy_HolySmite'
+        }, {
+            n = 'Sanctified Command',
+            d = { 
+                'Gives your Seal of Command a 45% chance to resist dispel effects and your Judgement of Command will restore mana equal to 10% of the base mana cost of the Seal of Command to you and nearby party members.',
+                'Gives your Seal of Command a 90% chance to resist dispel effects and your Judgement of Command will restore mana equal to 20% of the base mana cost of the Seal of Command to you and nearby party members.'
+            },
+            iconTexture = 'Ability_Warrior_InnerRage'
+        },
     },
 
     ['HunterBeast Mastery'] = {
-        {
+    	{
             n = 'Improved Aspect of the Hawk',
             d = { 'While Aspect of the Hawk is active, all normal ranged attacks have a 1% chance of increasing ranged attack speed by 30% for 12 sec.', 'While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec.', 'While Aspect of the Hawk is active, all normal ranged attacks have a 3% chance of increasing ranged attack speed by 30% for 12 sec.', 'While Aspect of the Hawk is active, all normal ranged attacks have a 4% chance of increasing ranged attack speed by 30% for 12 sec.', 'While Aspect of the Hawk is active, all normal ranged attacks have a 5% chance of increasing ranged attack speed by 30% for 12 sec.' },
             iconTexture = 'Spell_Nature_RavenForm'
@@ -702,7 +717,13 @@ local talentDescriptions = {
             n = 'Bestial Wrath',
             d = { 'Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.' },
             iconTexture = 'Ability_Druid_FerociousBite'
-        } },
+        },
+        {
+            n = 'Improved Predator Aspects',
+            d = { 'While Aspect of the Hawk or Wolf is active, all normal ranged attacks and melee attacks have a 1% chance of increasing attack speed by 30% for 12 sec. Hawk will apply ranged attack speed, while Wolf will apply melee attack speed.', 'While Aspect of the Hawk or Wolf is active, all normal ranged attacks and melee attacks have a 2% chance of increasing attack speed by 30% for 12 sec. Hawk will apply ranged attack speed, while Wolf will apply melee attack speed.', 'While Aspect of the Hawk or Wolf is active, all normal ranged attacks and melee attacks have a 3% chance of increasing attack speed by 30% for 12 sec. Hawk will apply ranged attack speed, while Wolf will apply melee attack speed.', 'While Aspect of the Hawk or Wolf is active, all normal ranged attacks and melee attacks have a 4% chance of increasing attack speed by 30% for 12 sec. Hawk will apply ranged attack speed, while Wolf will apply melee attack speed.', 'While Aspect of the Hawk or Wolf is active, all normal ranged attacks and melee attacks have a 5% chance of increasing attack speed by 30% for 12 sec. Hawk will apply ranged attack speed, while Wolf will apply melee attack speed.' },
+            iconTexture = 'Spell_Nature_RavenForm'
+        }
+    },
     ['HunterMarksmanship'] = {
         {
             n = 'Improved Concussive Shot',
@@ -762,7 +783,7 @@ local talentDescriptions = {
             iconTexture = 'Ability_TrueShot'
         } },
     ['HunterSurvival'] = {
-        {
+    	{
             n = 'Monster Slaying',
             d = { 'Increases all damage caused against Beasts, Giants and Dragonkin targets by 1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 1%.', 'Increases all damage caused against Beasts, Giants and Dragonkin targets by 2% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 2%.', 'Increases all damage caused against Beasts, Giants and Dragonkin targets by 3% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 3%.' },
             iconTexture = 'INV_Misc_Head_Dragon_Black'
@@ -776,7 +797,7 @@ local talentDescriptions = {
             iconTexture = 'Ability_Parry'
         }, {
             n = 'Entrapment',
-            d = { 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 5% chance to entrap the target, preventing them from moving for 5 sec.', 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 10% chance to entrap the target, preventing them from moving for 5 sec.', 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 15% chance to entrap the target, preventing them from moving for 5 sec.', 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 20% chance to entrap the target, preventing them from moving for 5 sec.', 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 25% chance to entrap the target, preventing them from moving for 5 sec.' },
+            d = { 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 8% chance to entrap the target, preventing them from moving for 5 sec.', 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 16% chance to entrap the target, preventing them from moving for 5 sec.', 'Gives your Immolation Trap, Frost Trap, and Explosive Trap a 25% chance to entrap the target, preventing them from moving for 5 sec.' },
             iconTexture = 'Spell_Nature_StrangleVines'
         }, {
             n = 'Savage Strikes',
@@ -824,9 +845,18 @@ local talentDescriptions = {
             iconTexture = 'Spell_Nature_Invisibilty'
         }, {
             n = 'Wyvern Sting',
-            d = { 'A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 0 Nature damage over 12 sec. Only usable out of combat. Only one Sting per Hunter can be active on the target at a time.' },
+            d = { 'A stinging shot that puts the target to sleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 300 Nature damage over 12 sec. Only usable out of combat. Only one Sting per Hunter can be active on the target at a time.' },
             iconTexture = 'INV_Spear_02'
-        } },
+        }, {
+            n = 'Improved Slaying',
+            d = { 'Increases all damage caused against Beasts, Giants, Dragonkin, and Humanoid targets by 1% and increases critical damage caused against Beasts, Giants, Dragonkin, and Humanoid targets by an additional 1%.', 'Increases all damage caused against Beasts, Giants, Dragonkin, and Humanoid targets by 2% and increases critical damage caused against Beasts, Giants, Dragonkin, and Humanoid targets by an additional 2%.', 'Increases all damage caused against Beasts, Giants, Dragonkin, and Humanoid targets by 3% and increases critical damage caused against Beasts, Giants, Dragonkin, and Humanoid targets by an additional 3%.' },
+            iconTexture = 'Spell_Holy_PrayerOfHealing'
+        }, {
+            n = 'Superior Strikes',
+            d = { 'Reduces the cooldown of your Raptor Strike and Mongoose Bite by 0.2 sec.',  'Reduces the cooldown of your Raptor Strike and Mongoose Bite by 0.4 sec.',  'Reduces the cooldown of your Raptor Strike and Mongoose Bite by 0.6 sec.',  'Reduces the cooldown of your Raptor Strike and Mongoose Bite by 0.8 sec.',  'Reduces the cooldown of your Raptor Strike and Mongoose Bite by 1 sec.' },
+            iconTexture = 'Ability_MeleeDamage'
+        }
+    },
 
     ['RogueAssassination'] = {
         {
@@ -855,7 +885,7 @@ local talentDescriptions = {
             iconTexture = 'Ability_Rogue_SliceDice'
         }, {
             n = 'Relentless Strikes',
-            d = { 'Your finishing moves have a 1101000000% chance per combo point to restore 25 energy.' },
+            d = { 'Your finishing moves have a 20% chance per combo point to restore 25 energy.' },
             iconTexture = 'Ability_Warrior_DecisiveStrike'
         }, {
             n = 'Improved Expose Armor',
@@ -1032,7 +1062,7 @@ local talentDescriptions = {
             iconTexture = 'Spell_Nature_MirrorImage'
         }, {
             n = 'Improved Sap',
-            d = { 'Gives you a 33% chance to return to stealth mode after using your Sap ability.', 'Gives you a 66% chance to return to stealth mode after using your Sap ability.', 'Gives you a 100% chance to return to stealth mode after using your Sap ability.' },
+            d = { 'Gives you a 50% chance to return to stealth mode after using your Sap ability.', 'Gives you a 100% chance to return to stealth mode after using your Sap ability.' },
             iconTexture = 'Ability_Sap'
         }, {
             n = 'Serrated Blades',
@@ -1316,7 +1346,7 @@ local talentDescriptions = {
             iconTexture = 'Spell_Fire_Immolation'
         }, {
             n = 'Elemental Focus',
-            d = { 'Gives you a 10% chance to enter a Clearcasting state after casting any Fire, Frost, or Nature damage spell. The Clearcasting state reduces the mana cost of your next damage spell by 100%.' },
+            d = { 'After landing a critical strike with a Fire, Frost, or Nature damage spell or melee attack, you enter a Clearcasting state. The Clearcasting state reduces the mana cost of your next 2 damage spells by 40%.' },
             iconTexture = 'Spell_Shadow_ManaBurn'
         }, {
             n = 'Reverberation',
@@ -1422,12 +1452,30 @@ local talentDescriptions = {
             iconTexture = 'Spell_Holy_SealOfMight'
         }, {
             n = 'Thunderhead',
-            d = { 'Allows your Lightning Shield to be cast on allies and reduces its mana cost by 20%.' },
-            iconTexture = 'spell_nature_lightningoverload'
+            d = { 'Allows your Lightning Shield to be cast on allies and reduces its mana cost by 20%. Only usable on one ally at a time.' },
+            iconTexture = 'Spell_Nature_Swiftness'
         }, {
             n = 'Bloodlust',
             d = { 'Increases melee, ranged, and spell casting speed by 20% for a party member within 20 yards. Lasts 20 sec.' },
-            iconTexture = 'spell_nature_bloodlust'
+            iconTexture = 'Spell_Nature_BloodLust'
+        }, {
+            n = 'Ancestral Guardian',
+            d = {
+                'Increases your armor value from items by 2% and chance to dodge by an additional 1%.',
+                'Increases your armor value from items by 4% and chance to dodge by an additional 2%.',
+                'Increases your armor value from items by 6% and chance to dodge by an additional 3%.',
+                'Increases your armor value from items by 8% and chance to dodge by an additional 4%.',
+                'Increases your armor value from items by 10% and chance to dodge by an additional 5%.'
+            },
+            iconTexture = 'Spell_Nature_AncestralGuardian'
+        }, {
+            n = 'Spirit Armor',
+            d = {
+                'Increases the armor gained from Shields by 10%.',
+                'Increases the armor gained from Shields by 20%.',
+                'Increases the armor gained from Shields by 30%.'                 
+            },
+            iconTexture = 'Spell_Nature_SpiritArmor'
         }
     },
     ['ShamanRestoration'] = {
@@ -1859,13 +1907,13 @@ local talentDescriptions = {
         }, {
             n = 'Improved Enslave Demon',
             d = {
-                "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 5% and reduces the resist chance by 10%, and the casting time by .5 second.",
+                "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 5% and reduces the resist chance by 10%, and the casting time by 0.5 second.",
                 "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by 10% and reduces the resist chance by 20%, and the casting time by 1 second."
             },
             iconTexture = 'Spell_Shadow_EnslaveDemon'
         }, {
             n = 'Demonic Sacrifice',
-            d = { 'When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned. Imp: Increases your Fire damage by 15%. Voidwalker: Restores 3% of total Health every 4 sec.Succubus: Increases your Shadow damage by 15%. Felhunter: Restores 2% of total Mana every 4 sec.' },
+            d = { 'When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min. The effect is canceled if any Demon is summoned.\n\nImp: Increases your Fire damage by 15%.\n\nVoidwalker: Restores 3% of total Health every 4 sec.\n\nSuccubus: Increases your Shadow damage by 15%.\n\nFelhunter: Restores 2% of total Mana every 4 sec.' },
             iconTexture = 'Spell_Shadow_PsychicScream'
         }, {
             n = 'Improved Firestone',
@@ -1873,10 +1921,11 @@ local talentDescriptions = {
             iconTexture = 'INV_Ammo_FireTar'
         }, {
             n = 'Master Demonologist',
-            d = { 'Grants both the Warlock and the summoned demon an effect as long as that demon is active. Imp - Reduces threat caused by 4%. Voidwalker - Reduces physical damage taken by 2%. Succubus - Increases all damage caused by 2%. Felhunter - Increases all resistances by .2 per level.',
-                  'Grants both the Warlock and the summoned demon an effect as long as that demon is active. Imp - Reduces threat caused by 8%. Voidwalker - Reduces physical damage taken by 4%. Succubus - Increases all damage caused by 4%. Felhunter - Increases all resistances by .4 per level.',
-                  'Grants both the Warlock and the summoned demon an effect as long as that demon is active. Imp - Reduces threat caused by 12%. Voidwalker - Reduces physical damage taken by 6%. Succubus - Increases all damage caused by 6%. Felhunter - Increases all resistances by .6 per level.', 'Grants both the Warlock and the summoned demon an effect as long as that demon is active. Imp - Reduces threat caused by 16%. Voidwalker - Reduces physical damage taken by 8%. Succubus - Increases all damage caused by 8%. Felhunter - Increases all resistances by .8 per level.',
-                  'Grants both the Warlock and the summoned demon an effect as long as that demon is active. Imp - Reduces threat caused by 20%. Voidwalker - Reduces physical damage taken by 10%. Succubus - Increases all damage caused by 10%. Felhunter - Increases all resistances by 1 per level.' },
+            d = { 'Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 4%.\n\nVoidwalker - Reduces physical damage taken by 2%.\n\nSuccubus - Increases all damage caused by 2%.\n\nFelhunter - Increases all resistances by 0.2 per level.',
+                  'Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 8%.\n\nVoidwalker - Reduces physical damage taken by 4%.\n\nSuccubus - Increases all damage caused by 4%.\n\nFelhunter - Increases all resistances by 0.4 per level.',
+                  'Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 12%.\n\nVoidwalker - Reduces physical damage taken by 6%.\n\nSuccubus - Increases all damage caused by 6%.\n\nFelhunter - Increases all resistances by 0.6 per level.',
+                  'Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 16%.\n\nVoidwalker - Reduces physical damage taken by 8%.\n\nSuccubus - Increases all damage caused by 8%.\n\nFelhunter - Increases all resistances by 0.8 per level.',
+                  'Grants both the Warlock and the summoned demon an effect as long as that demon is active.\n\nImp - Reduces threat caused by 20%.\n\nVoidwalker - Reduces physical damage taken by 10%.\n\nSuccubus - Increases all damage caused by 10%.\n\nFelhunter - Increases all resistances by 1 per level.' },
             iconTexture = 'Spell_Shadow_ShadowPact'
         }, {
             n = 'Soul Link',
@@ -1938,7 +1987,7 @@ local talentDescriptions = {
             iconTexture = 'Spell_Shadow_ScourgeBuild'
         }, {
             n = 'Intensity',
-            d = { 'Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.', 'Gives you a 70% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.' },
+            d = { 'Gives your Fire spells a 35% chance to not lose casting time when you take damage.', 'Gives your Fire spells a 70% chance to not lose casting time when you take damage.' },
             iconTexture = 'Spell_Fire_LavaSpawn'
         }, {
             n = 'Destructive Reach',
@@ -2040,8 +2089,7 @@ local talentDescriptions = {
         }, {
             n = 'Moonkin Form',
             d = {
-                "Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360%, the Mana cost of your Moonfire, Starfire, and Wrath spells by 20%, and all party members within 30 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
-                "Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360%, the Mana cost of your Moonfire, Starfire, and Wrath spells by 20%, and all party members within 30 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+                "Transforms the Druid into Moonkin Form. While in this form the armor contribution from items is increased by 360%, the Mana cost of your Moonfire, Starfire, and Wrath spells is decreased by 20%, and all party members within 30 yards have their spell critical chance increased by 3%. The Moonkin can only cast Balance spells while shapeshifted.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.",
             },
             iconTexture = 'Spell_Nature_ForceOfNature'
         } },
@@ -2100,7 +2148,10 @@ local talentDescriptions = {
             iconTexture = 'Ability_GhoulFrenzy'
         }, {
             n = 'Primal Fury',
-            d = { 'Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.', 'Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.' },
+            d = { 
+            	'Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form and your critical strikes from Cat Form abilities that add combo points have a 50% chance to add an additional combo point.',
+            	'Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form and your critical strikes from Cat Form abilities that add combo points have a 100% chance to add an additional combo point.'
+            },
             iconTexture = 'Ability_Racial_Cannibalize'
         }, {
             n = 'Savage Fury',
@@ -2125,8 +2176,8 @@ local talentDescriptions = {
         }, {
             n = 'Blood Frenzy',
             d = {
-                "Increases the duration of Tiger's Fury by 3 seconds and your Enrage now also instantly regenerates 5 rage. In addition, increases attack speed by 6% when either effect is active.",
-                "Increases the duration of Tiger's Fury by 5 seconds and your Enrage now also instantly regenerates 10 rage. In addition, increases attack speed by 12% when either effect is active."
+                "Increases the duration of Tiger's Fury by 3 seconds and your Enrage now also instantly generates 5 rage. In addition, Tiger's Fury and Enrage increase your attack speed by 6% for 6 seconds.",
+                "Increases the duration of Tiger's Fury by 6 seconds and your Enrage now also instantly generates 10 rage. In addition, Tiger's Fury and Enrage increase your attack speed by 12% for 6 seconds."
             },
             iconTexture = 'ability_ghoulfrenzy'
         }
