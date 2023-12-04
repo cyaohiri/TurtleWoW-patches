@@ -927,7 +927,7 @@ local talentDescriptions = {
                 "Increases the chance to apply poisons to your target by 8%.",
                 "Increases the chance to apply poisons to your target by 10%.",
             },
-            iconTexture = 'Spell_Nature_EarthBindTotem'
+            iconTexture = 'Ability_Poisons'
         }
     },
     ['RogueCombat'] = {
